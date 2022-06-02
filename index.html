@@ -50,23 +50,57 @@
 							<article id="intro">
 								<h2 class="major">Intro</h2>
 								<span class="image main"><img src="images/pic01.jpg" alt="" /></span>
-								<p>Hello!<p>
-								<p>My name is Eva Durán Camacho, and I am currently a second year PhD student at Cardiff University (<span class="iconify" data-icon="twemoji:flag-wales"></span>). I graduated with a Degree in Physics from Universidad Autónoma of Madrid (<span class="iconify" data-icon="twemoji:flag-spain"></span>) in June 2019 and a MASt in Astrophysics from the University of Cambridge (<span class="iconify" data-icon="twemoji:flag-england"></span>)  in June 2020. <p>
-								<p>My research is focused on the use of numerical simulations to reproduce Milky Way type galaxies, including physical processes such as star formation or supernovae feedback. I am currently modelling self-consistently the structure of the Galaxy using live potentials in AREPO. This way I create a base simulation for a wide range of future projects, which include the study of environmental effects on star formation.  <p>
-								<p>If you are still interested in my work, you can visit my <a href="#research">research page</a>. <p>
+								<p align="justify">Hello!<p>
+								<p align="justify">My name is Eva Durán Camacho, and I am currently a second year PhD student at Cardiff University (<span class="iconify" data-icon="twemoji:flag-wales"></span>). I graduated with a Degree in Physics from Universidad Autónoma of Madrid (<span class="iconify" data-icon="twemoji:flag-spain"></span>) in June 2019 and a MASt in Astrophysics from the University of Cambridge (<span class="iconify" data-icon="twemoji:flag-england"></span>)  in June 2020. <p>
+								<p align="justify">My research is focused on the use of numerical simulations to reproduce Milky Way type galaxies, including physical processes such as star formation or supernovae feedback. I am currently modelling self-consistently the structure of the Galaxy using live potentials in AREPO. This way I create a base simulation for a wide range of future projects, which include the study of environmental effects on star formation.  <p>
+								<p align="justify">If you are still interested in my work, you can visit my <a href="#research">research page</a>. <p>
 							</article>
 
 						<!-- Research -->
 							<article id="research">
 								<h2 class="major">Research</h2>
 								<span class="image main"><img src="images/bg.jpg" alt="" /></span>
-								<p>We use the hydrodynamical AREPO moving-mesh code to perform numerical simulations of the Milky Way. In our models, the structures are obtained via the evolution of a live stellar disc and bulge, as well as a live dark matter halo and a gaseous disc, all of which move self-consistently with no pre-defined fixed potentials. We produce longitude-velocity (lv) plots of the projected gas surface densities to extract the skeletons of the main features (arms, bar), as well as the contours defining the terminal velocities of the gas. We then compare these with observations via minimisation of the symmetrised distance between the observed and simulated features for a best fit
+								<p align="justify">We use the hydrodynamical AREPO moving-mesh code to perform numerical simulations of the Milky Way. In our models, the structures are obtained via the evolution of a live stellar disc and bulge, as well as a live dark matter halo and a gaseous disc, all of which move self-consistently with no pre-defined fixed potentials. Our initial simulations are run on isothermal conditions. We produce longitude-velocity (lv) plots of the projected gas surface densities to extract the skeletons of the main features (arms, bar), as well as the contours defining the terminal velocities of the gas. We then compare these with observations via minimisation of the symmetrised distance between the observed and simulated features for a best fit
 <p>
-								<p><video width="427" height="320" controls>
+
+								<p align="justify">We generate a numerical sample of six different models, all following Hernquist profiles for the dark matter halo and stellar bulge, and exponential profile for the stellar disc. Varying the initial stellar mass in the disc and bulge, we create the first three simulations: <em>Fiducial, Small Bulge Small Disc (SBSD), and Small Bulge Large Disc (SBLD).</em></p align="justify">
+
+								<p align="justify">The initial conditions are generated with the MAKENEWDISK code, where the gas follows an exponential column density profile by default. We generate our next sample of three models by adjusting the gas to follow a flat column density distribution instead for each of the stellar models.<p>
+                                                                
+								<p align="justify">Here I present the evolution in time of the star (LEFT) and gas (RIGHT) particles of the SBLD module as an example. The video shows the top-down view of the Galaxy, where the colour bar refers to the column density obtained from AREPO:  <p>
+								<p align="center"><video width="550" height="413" controls>
   								<source src="files/SBLD_exp.mp4" type="video/mp4">
   								Your browser does not support the video tag.
 								</video><p>
-							</article>
+
+								<p align="justify">We produce longitude-velocity (<span class="emphasized">lv</span>) plots that trace the main structural features of the Galaxy. In order to do so, we need to sweep a range of angles around the Galactic Center to choose for the observer's position, as here shown in an example for the SBSD model:<p>
+								<p align="center"><video width="500" height="500" controls>
+                                                                <source src="files/Sun.mp4" type="video/mp4">
+                                                                Your browser does not support the video tag.
+                                                                </video><p>
+
+								<p aling="justify">For a range of angles and times, we generate these (<span class="emphasized">lv</span>) plots and extract the "skeletons" that track the main features to compare with the CO emission observations of Dame et. al. (2001).  <p>
+								<span class="image main"><img src="files/skeletons.png" alt="" /></span>
+
+								<p align="justify">For each of our models and the range of times and angles, we account for three different metrics to compare to the observations:  <p>
+								<p align="jusitfy"><strong>A.</strong> Symmetrized Modified Hausdorff  Distance (SMHD,Sormani & Magorrian 2015) between observations and simulations' skeletons. The lower the metric, the better the fit. </p>
+
+								<p align="justify"><strong>B.</strong> Terminal velocity comparing the <span class="emphasized">lv</span>)-space occupied by observations and simulations. The resulting plot favours the SBLD model </p>
+
+								<p align="justify"><strong>C.</strong> Gas column density distribution for each model vs observed total gas (CO+𝐻𝐼 from HI-4Pi Survey). These plots favour models with a flatter profile.	</p>
+							
+								<span class="image main"><img src="files/3_in_1.png" alt="" /></span>
+
+								<p align="justify">Here we present our best modelfor the galactic structure: small SBLD at atime ~2.4 Gyrs. This best fit shows a number of transient arms and an inner galactic bar. Its main features include a pattern speed of ~22 km/s/kpc, a bar orientation of 30 deg and a length of ~ 6 kpc <p>
+								<span class="image main"><img src="files/best.png" alt="" /></span>
+
+							       <p align="center"><strong> ------ WHAT'S NEXT? ------ </strong></p> 	
+
+							       <p align="center">This model now acts as our base model for the inclusion of more complex physical processes such as chemistry, SNe and stellar feedback. AREPO allows us to zoom in to specifim regions while solving self-consistentlu the grand scheme. Hence, the ultimate goal is to study environmental effects on star formation, via molecular clouds, star formation rates in the arm, inter-arm and central regions.<p>
+                                                               <p align="center"><strong> -------------------------------- </strong></p>
+
+							       <p> But who knows what else...? <span class="iconify" data-icon="twemoji:woman-shrugging-medium-dark-skin-tone"></span><p>
+						</article>
 
 						<!-- Contact -->
 							<article id="contact">
@@ -81,9 +115,6 @@
 								United Kingdom<br>
 								E: durancamachoe @ cardiff.ac.uk<br>
 								<br>
-								<ul class="icons">
-									<li><a href="https://github.com/evadc" class="icon brands fa-github fa-lg"><span class="label">GitHub</span></a></li>
-								</ul>
 							</article>
 
 						<!-- Elements -->

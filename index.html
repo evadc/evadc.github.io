@@ -36,7 +36,7 @@
 								<li><a href="#intro">Intro</a></li>
 								<li><a href="#research">Research</a></li>
 								<li><a href="files/CV.pdf">CV</a></li>
-								<li><a href="files/poster_EDC23_FINAL.pdf">Poster</a></li>
+								<li><a href="https://arxiv.org/search/astro-ph?searchtype=author&query=Dur%C3%A1n-Camacho,+E">Publications</a></li>
 								<li><a href="#contact">Contact</a></li>
 								<!--<li><a href="#elements">Elements</a></li>-->
 							</ul>
@@ -51,7 +51,7 @@
 								<h2 class="major">Intro</h2>
 								<span class="image main"><img src="images/pic01.jpg" alt="" /></span>
 								<p align="justify">Hello!<p>
-								<p align="justify">My name is Eva Durán Camacho, and I am currently a third year PhD student at Cardiff University (<span class="iconify" data-icon="twemoji:flag-wales"></span>). I graduated with a Degree in Physics from Universidad Autónoma of Madrid (<span class="iconify" data-icon="twemoji:flag-spain"></span>) in June 2019 and a MASt in Astrophysics from the University of Cambridge (<span class="iconify" data-icon="twemoji:flag-england"></span>)  in June 2020. <p>
+								<p align="justify">My name is Eva Durán Camacho, and I am currently a forth year PhD student at Cardiff University (<span class="iconify" data-icon="twemoji:flag-wales"></span>). I graduated with a Degree in Physics from Universidad Autónoma of Madrid (<span class="iconify" data-icon="twemoji:flag-spain"></span>) in June 2019 and a MASt in Astrophysics from the University of Cambridge (<span class="iconify" data-icon="twemoji:flag-england"></span>)  in June 2020. <p>
 								<p align="justify">My research is focused on the use of numerical simulations to reproduce Milky Way type galaxies, including physical processes such as star formation or supernovae feedback. I am currently modelling self-consistently the structure of the Galaxy using live potentials in AREPO. This way I create a base simulation for a wide range of future projects, which include the study of environmental effects on star formation.  <p>
 								<p align="justify">If you are still interested on my work, you can visit my <a href="#research">research page</a>. <p>
 							</article>
@@ -63,23 +63,23 @@
 								<p align="justify">We use the hydrodynamical AREPO moving-mesh code to perform numerical simulations of the Milky Way. In our models, the structures are obtained via the evolution of a live stellar disc and bulge, as well as a live dark matter halo and a gaseous disc, all of which move self-consistently with no pre-defined fixed potentials. Our initial simulations are run on isothermal conditions. We produce longitude-velocity (lv) plots of the projected gas surface densities to extract the skeletons of the main features (arms, bar), as well as the contours defining the terminal velocities of the gas. We then compare these with observations via minimisation of the symmetrised distance between the observed and simulated features for a best fit
 <p>
 
-								<p align="justify">We generate a numerical sample of six different models, all following Hernquist profiles for the dark matter halo and stellar bulge, and exponential profile for the stellar disc. Varying the initial stellar mass in the disc and bulge, we create the first three simulations: <em>Fiducial, Small Bulge Small Disc (SBSD), and Small Bulge Large Disc (SBLD).</em></p align="justify">
+								<p align="justify">We generate a numerical sample of 15 different models, all following Hernquist profiles for the dark matter halo and stellar bulge, and exponential profile for the stellar disc. They vary the initial stellar mass within observed ranges, and the distribution in the disc and bulge. </p align="justify">
 
 								<p align="justify">The initial conditions are generated with the MAKENEWDISK code, where the gas follows an exponential column density profile by default. We generate our next sample of three models by adjusting the gas to follow a flat column density distribution instead for each of the stellar models.<p>
                                                                 
-								<p align="justify">Here I present the evolution in time of the star (LEFT) and gas (RIGHT) particles of the SBLD module as an example. The video shows the top-down view of the Galaxy, where the colour bar refers to the column density obtained from AREPO:  <p>
+								<p align="justify">Here I present the evolution in time of the star (LEFT) and gas (RIGHT) particles of one of my models (model no. 5) as an example. The video shows the top-down view of the Galaxy, where the colour bar refers to the column density obtained from AREPO:  <p>
 								<p align="center"><video width="550" height="413" controls>
   								<source src="files/SBLD_exp.mp4" type="video/mp4">
   								Your browser does not support the video tag.
 								</video><p>
 
-								<p align="justify">We produce longitude-velocity (<span class="emphasized">lv</span>) plots that trace the main structural features of the Galaxy. In order to do so, we need to sweep a range of angles around the Galactic Center to choose for the observer's position, as here shown in an example for the SBSD model:<p>
+								<p align="justify">We produce longitude-velocity (<span class="emphasized">lv</span>) plots that trace the main structural features of the Galaxy. In order to do so, we need to sweep a range of angles around the Galactic Center to choose for the observer's position, as here shown in an example for the same model:<p>
 								<p align="center"><video width="500" height="500" controls>
                                                                 <source src="files/Sun.mp4" type="video/mp4">
                                                                 Your browser does not support the video tag.
                                                                 </video><p>
 
-								<p aling="justify">For a range of angles and times, we generate these (<span class="emphasized">lv</span>) plots and extract the "skeletons" that track the main features to compare with the CO emission observations of Dame et. al. (2001).  <p>
+								<p aling="justify">For a range of angles and times, we generate these (<span class="emphasized">lv</span>) plots and extract the "skeletons" that track the main features to compare with the 12CO emission observations of Dame et. al. (2001).  <p>
 								<span class="image main"><img src="files/skeletons.png" alt="" /></span>
 
 								<p align="justify">For each of our models and the range of times and angles, we account for three different metrics to compare to the observations:  <p>
@@ -91,7 +91,7 @@
 							
 								<span class="image main"><img src="files/3_in_1.png" alt="" /></span>
 
-								<p align="justify">Based on the previous plots and analysis, here we present our best fit for the galactic structure: SBLD at a time ~2.4 Gyrs. It shows a number of transient arms and an inner galactic bar. Its main features include a pattern speed of ~22 km/s/kpc, a bar orientation of 30 deg and a length of ~ 6 kpc <p>
+								<p align="justify">Based on the previous plots and analysis, here we present our best fit for the galactic structure: Model 4 at a time ~2.6 Gyrs. It shows a number of transient arms and an inner galactic bar. Its main features include a pattern speed of ~30 km/s/kpc, and a half-length of ~ 3.2 kpc <p>
 								<span class="image main"><img src="files/best.png" alt="" /></span>
 
 							       <p align="center"><strong> ------ WHAT'S NEXT? ------ </strong></p> 	
